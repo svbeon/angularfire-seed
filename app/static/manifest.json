@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "short_name": "",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eee",
+  "theme_color": "#eee",
+  "offline_enabled": true,
+  "description": "",
+  "lang": "en",
+  "prefer_related_applications": true,
+  "icons": [{
+    "src": "static/img/icon.png",
+    "sizes": "2048x2048",
+    "type": "image/png"
+  }, {
+    "src": "static/img/icon512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }, {
+    "src": "static/img/icon.svg",
+    "sizes": "2048x2048",
+    "type": "image/svg+xml"
+  }],
+  "related_applications": [{
+    "platform": "web",
+    "url": ""
+  }]
+}

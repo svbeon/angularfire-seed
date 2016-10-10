@@ -1,2 +1,2 @@
-# angularfire-seed
-My personal seed for angularfire projects
+# JAAFS
+## Just Another AngularFire Seed

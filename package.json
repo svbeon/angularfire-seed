@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-tools": "*",
+    "jsdoc": "^3.3.0",
+    "minami": "^1.1.1",
+    "postcss-cli": "*",
+    "postcss-cssnext": "*",
+    "postcss-csso": "*",
+    "uglify-js": "*"
+  },
+  "scripts": {
+    "start": "firebase serve",
+    "pretest": "rm -rf public && cp -r app public && find public -type f -name '*.css' -exec rm {} + && find public -type f -name '*.js' -not -path 'public/static/js/*' -exec rm {} +",
+    "test": "chmod +x ./deploy.sh && ./deploy.sh",
+    "deploy": "firebase deploy --project $FIREBASE_PROJECT",
+    "staging": "firebase deploy --project $FIREBASE_STAGING",
+    "docs": "jsdoc -r -c .jsdoc.json"
+  }
+}

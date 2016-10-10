@@ -1,0 +1,32 @@
+{
+  "database": {
+    "rules": "firebase.db.rules.json"
+  },
+  "hosting": {
+    "public": "public",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [{
+      "source": "/favicon.ico",
+      "destination": "/static/img/icon.png"
+    }, {
+      "source": "**",
+      "destination": "/index.html"
+    }],
+    "ignore": [],
+    "redirects": [],
+    "headers": [{
+      "source": "**/*.@(css|js|html|png|svg)",
+      "headers": [{
+        "key": "Cache-Control",
+        "value": "max-age=86400"
+      }]
+    }, {
+      "source": "/",
+      "headers": [{
+        "key": "Link",
+        "value": "</static/js/app.js>;rel=preload;as=script,</static/css/style.css>;rel=preload;as=style"
+      }]
+    }]
+  }
+}
