@@ -1,2 +1,2 @@
 # JAAFS
-## Just Another AngularFire Seed
+Just Another AngularFire Seed
